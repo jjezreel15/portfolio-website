@@ -1,0 +1,250 @@
+body, h1, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg'); 
+    background-size: cover; 
+    color: white;
+    text-align: center; 
+}
+
+
+header {
+    position: fixed;
+    background-color: transparent;
+    padding: 15px;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navbar {
+    display: flex;
+    background-color: transparent !important;
+    text-align: right;
+    justify-content: space-between;
+    max-width: 1600px;
+}
+
+nav ul {
+    list-style-type: none;
+    max-width: 1600px;
+    text-align: right;
+}
+
+nav ul li {
+    display: flex;
+    margin-right: 20px;
+    max-width: 1600px;
+    text-align: right;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 20px;
+    max-width: 1600px;
+    text-align: right;
+}
+
+#home {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+#home h1 {
+    justify-content: center;
+    margin-top: 300px;
+    font-size: 50px;
+    font-weight: bold;
+    max-width: 1100px;
+}
+#home h3 {
+    font-size: 24px;
+    font-style: italic;
+    max-width: 1100px;
+}
+#home p {
+    font-size: 18px;
+    max-width: 1100px;
+}
+
+#works h1 {
+    font-size: 64px;
+    margin-top: 80px;
+}
+
+#works p {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+#works {
+    padding: 50px 20px;
+}
+
+
+.works-grid {
+    display: flex;;
+    justify-content: center;
+    gap: 90px;
+    margin-top: 30px;
+}
+
+.work-item {
+    background-color: #333;
+    margin-top: 80px;
+    color: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+    text-align: center; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.work-item img {
+    width: 200%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.work-item p {
+    margin-top: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.work-item:hover {
+    transform: scale(1.05);
+}
+
+
+#about {
+    padding: 50px 20px;
+}
+
+.about-content {
+    margin-top: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 100px;
+    text-align: left;
+}
+
+.about-text {
+    max-width: 60%;
+    padding-right: 20px;
+}
+
+.about-text h1 {
+    margin-top: 40px;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-image img {
+    margin-top: 100px;
+    border-radius: 10px;
+    max-width: 300px;
+    height: auto;
+    border: 2px solid white;
+}
+
+
+.contact-section {
+    padding: 50px 20px;
+    background-color: transparent; 
+    border-radius: 100px;
+    margin-top: 100px;
+}
+
+.contact-container h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.contact-container p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 50px;
+}
+
+.contact-container a {
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.navbar .nav-link {
+    color: white !important; 
+    font-size: 18px;
+}
+
+.navbar .nav-link:hover {
+    color: #f0f0f0; 
+}
+
+.navbar .nav-link.active {
+    color: #ffcc00 !important; 
+}
+
+/* Style for Logout Button */
+#logoutButton {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    background-color: #ff4d4d; /* Red background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none; /* Remove underline from links */
+}
+
+#logoutButton:hover {
+    background-color: #ff1a1a; /* Darker red on hover */
+    color: #fff;
+}
